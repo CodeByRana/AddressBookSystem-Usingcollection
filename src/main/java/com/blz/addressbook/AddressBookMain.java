@@ -22,14 +22,17 @@ public class AddressBookMain {
     static ContactInformation contact;
     static ArrayList<String> information = new ArrayList<String>();
 
-    //put here choice function like which activity you want to perform
+    //put here switch choice function like which activity you want to perform
     public static void firstActions() {
-        System.out.println("Address Book Menu: What would you like to do? 1) Add data. 2) Close.");
+        System.out.println("Address Book Menu: What would you like to do? 1) Add data. 2) Display Record. 3) Close.");
         choice = input.nextInt();
         switch (choice) {
             case 1:
                 inputData();
             case 2:
+                fetchAllData();
+                break;
+            case 3:
                 System.out.println("Application terminated.");
                 System.exit(0);
             default:
@@ -67,5 +70,15 @@ public class AddressBookMain {
             System.out.println("What would you like to do next?");
             firstActions();
         }
+        //Retrieve data using collection library
+        public static void fetchAllData(){
+
+        }
+        //Update data using collection library
+        public static void updateData(){
+
+        }
+
+
 }
 
