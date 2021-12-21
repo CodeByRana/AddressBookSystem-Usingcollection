@@ -24,7 +24,7 @@ public class AddressBookMain {
 
     //put here switch choice function like which activity you want to perform
     public static void firstActions() {
-        System.out.println("Address Book Menu: What would you like to do? 1) Add data. 2) Display Record. 3) Close.");
+        System.out.println("Address Book Menu: What would you like to do? 1) Add data. 2) Display Record. 3) Edit Contact 4) Close.");
         choice = input.nextInt();
         switch (choice) {
             case 1:
