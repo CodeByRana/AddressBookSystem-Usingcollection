@@ -24,7 +24,7 @@ public class AddressBookMain {
 
     //put here switch choice function like which activity you want to perform
     public static void firstActions() {
-        System.out.println("Address Book Menu: What would you like to do? 1) Add data. 2) Display Record. 3) Close.");
+        System.out.println("Address Book Menu: What would you like to do? 1) Add data. 2) Display Record. 3) Edit Contact 4) Delete Contact 5) Close.");
         choice = input.nextInt();
         switch (choice) {
             case 1:
@@ -33,6 +33,12 @@ public class AddressBookMain {
                 fetchAllData();
                 break;
             case 3:
+                updateData();
+                break;
+            case 4:
+                deleteData();
+                break;
+            case 5:
                 System.out.println("Application terminated.");
                 System.exit(0);
             default:
@@ -78,7 +84,10 @@ public class AddressBookMain {
         public static void updateData(){
 
         }
+        //Delete data using collection library
+        public static void deleteData(){
 
+        }
 
 }
 
